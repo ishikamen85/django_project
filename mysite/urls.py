@@ -18,4 +18,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #2021.03.25 - insertion of the blog url
+    path('', include('blog.urls')),
 ]
