@@ -24,14 +24,22 @@
         </div> 
     </body>
 </html>-->
+<html>
+    <head>
+        <title>My blog</title>
+    </head>
+    <body>
 <div>
     <h1><a href="/">My Blog</a></h1>
 </div>
 
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
+	{% for post in posts %}
+	    <div>
+	        <p>published: {{ post.published_date }}</p>
+	        <h2><a href="">{{ post.title }}</a></h2>
+	        <p>{{ post.text|linebreaksbr }}</p>
+	    </div>
+	{% endfor %}
+	        </div> 
+	    </body>
+</html>-->
