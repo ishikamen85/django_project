@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
     </head>
     <body>
         <div>
@@ -39,8 +40,9 @@
 
         {% for post in posts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
+            
                 <h2><a href="">{{ post.title }}</a></h2>
+                <p>published: {{ post.published_date }}</p>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
